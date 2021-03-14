@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div id="app">
+		<h1>Hello {{firstName}}</h1>
+	</div>
+	<script type="text/javascript" src="https://unpkg.com/vue@3.0.5"></script>
+	<script type="text/javascript">
+		const app = Vue.createApp({
+			data(){
+				return {
+					firstName: "John"
+				}
+			}
+		})
+
+		app.mount('#app')
+	</script>
+</body>
+</html>
